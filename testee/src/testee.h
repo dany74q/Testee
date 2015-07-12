@@ -3,7 +3,8 @@
 
 namespace testee {
 	auto for_each_arg = [](auto const& func, auto&&... args) {
-		unsigned _[] {
+		using swallow = unsigned[];
+		swallow _ {
 			(
 				func(std::forward<decltype(args)>(args)),
 				0u
