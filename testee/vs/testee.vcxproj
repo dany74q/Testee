@@ -10,6 +10,12 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\testee.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\usage\usage.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5202C574-374C-495C-92AB-49E5951ABB70}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -77,12 +83,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="testee.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="usage.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
